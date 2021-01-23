@@ -1,0 +1,6 @@
+From sklearn import datasets 
+wine = dataset.load_wine()
+from sklearn.naive_bayes import GaussianNB
+gnb = GaussianNB()
+gnb.fit(X_train, y_train)
+y_pred = gnb.predict(X_test)
